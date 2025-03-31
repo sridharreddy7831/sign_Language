@@ -5,5 +5,10 @@
       "src": "/(.*)",
       "dest": "wsgi.py"
     }
-  ]
+  ],
+  "build": {
+    "env": {
+      "PYTHONUNBUFFERED": "1"
+    }
+  }
 }
