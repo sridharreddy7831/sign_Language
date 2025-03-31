@@ -407,5 +407,6 @@ def serve_signfiles(path):
 	return send_from_directory('static',path)
 
 
-if __name__=="__main__":
-    app.run()
+if __name__ == "__main__":
+    from gunicorn.app.wsgiapp import run
+    run()
